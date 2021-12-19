@@ -22,6 +22,4 @@ public class BankBookRestExceptionHandler {
     public ErrorDto handleBankBookException(BankBookException bankBookException){
         return new ErrorDto(HttpStatus.BAD_REQUEST.name(), bankBookException.getMessage());
     }
-
-
 }

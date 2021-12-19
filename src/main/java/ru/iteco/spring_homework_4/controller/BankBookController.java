@@ -1,13 +1,10 @@
 package ru.iteco.spring_homework_4.controller;
 
 import org.hibernate.sql.Update;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import ru.iteco.spring_homework_4.model.dto.BankBookDto;
-import ru.iteco.spring_homework_4.model.exceptions.BankBookException;
-import ru.iteco.spring_homework_4.model.exceptions.BankBookNotFoundException;
 import ru.iteco.spring_homework_4.service.BankBookService;
 import ru.iteco.spring_homework_4.validation.Created;
 
