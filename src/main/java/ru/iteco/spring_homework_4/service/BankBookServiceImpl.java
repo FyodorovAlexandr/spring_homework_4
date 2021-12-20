@@ -78,7 +78,7 @@ public class BankBookServiceImpl implements BankBookService {
     @Override
     public ResponseEntity<String> deleteBankBookById(Integer bankBookId) {
         if(bankBookRepository.findById(bankBookId).isEmpty()){
-            throw new BankBookNotFoundException("Счет id" + bankBookId + " не существует");
+            throw new BankBookNotFoundException("Счет id " + bankBookId + " не существует");
         }
         else{
             bankBookRepository.deleteById(bankBookId);
